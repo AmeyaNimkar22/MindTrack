@@ -2,6 +2,8 @@ import MentalHealthImage from "../assets/resources_img.png";
 import MindsFoundation from"../assets/MindsFoundation.png";
 import Sangath from "../assets/Sangath.png";
 import liveJam from "../assets/liveJam.png";
+import connectGo from "../assets/connectGo.png";
+import fortis from "../assets/fortis.png";
 
 export default function Resources() {
   return (
@@ -100,7 +102,7 @@ export default function Resources() {
   {/* Connecting NGO */}
   <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition">
     <img 
-      src="https://connectingngo.org/wp-content/uploads/2020/08/connectinglogo.png" 
+      src={connectGo}
       alt="Connecting NGO" 
       className="w-16 h-16 mb-4 rounded-full object-contain"
     />
@@ -114,13 +116,13 @@ export default function Resources() {
   {/* Fortis Mental Health Program */}
   <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition">
     <img 
-      src="https://www.fortishealthcare.com/themes/custom/fortis/assets/images/logo.svg" 
+      src={fortis}
       alt="Fortis Mental Health" 
       className="w-16 h-16 mb-4 rounded-full object-contain"
     />
     <h4 className="text-blue-700 font-semibold mb-2">Fortis Mental Health</h4>
     <p className="text-gray-600 text-sm mb-4">Dedicated mental health program offering counseling, therapy, and psychiatric services across India.</p>
-    <a href="https://www.fortishealthcare.com/mental-health" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+    <a href="https://www.fortishealthcare.com" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
       Visit
     </a>
   </div>

@@ -1,7 +1,9 @@
 import MentalHealthImage from "../assets/resources_img.png";
+import MindsFoundation from"../assets/MindsFoundation.png";
+import Sangath from "../assets/Sangath.png";
+import liveJam from "../assets/liveJam.png";
 
-
-export default function About() {
+export default function Resources() {
   return (
     <section className="min-h-screen  py-12 px-6 flex flex-col items-center">
 
@@ -56,7 +58,7 @@ export default function About() {
   {/* The MINDS Foundation */}
   <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition">
     <img 
-      src="https://www.mindsfoundation.org/uploads/1/2/0/5/120518700/editor/cropped-minds-logo.png" 
+      src={MindsFoundation} 
       alt="MINDS Foundation" 
       className="w-16 h-16 mb-4 rounded-full"
     />
@@ -70,7 +72,7 @@ export default function About() {
   {/* Sangath */}
   <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition">
     <img 
-      src="https://sangath.in/wp-content/uploads/2019/12/Sangath-logo.png" 
+      src={Sangath}
       alt="Sangath" 
       className="w-16 h-16 mb-4 rounded-full object-contain"
     />
@@ -84,7 +86,7 @@ export default function About() {
   {/* LiveJam Foundation */}
   <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition">
     <img 
-      src="https://livejam.org/wp-content/uploads/2021/06/logo.png" 
+      src={liveJam}
       alt="LiveJam Foundation" 
       className="w-16 h-16 mb-4 rounded-full object-contain"
     />
@@ -126,18 +128,7 @@ export default function About() {
 </div>
 
 
-      {/* Encouragement */}
-      <div className="bg-white p-6 rounded-xl shadow-lg max-w-3xl mb-8">
-        <h4 className="text-blue-400 font-semibold mb-2">Remember</h4>
-        <p className="text-gray-600 text-sm">
-          Mental health matters. Don’t hesitate to seek help. MindTrack is here to support you every step of the way.
-        </p>
-      </div>
-
-      {/* Call to Action */}
-      <a href="/test" className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">
-        Take a Quick Mental Health Check
-      </a>
+      
 
     </section>
   );

@@ -1,3 +1,6 @@
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+
 export default function About() {
   return (
     <section className="min-h-screen  py-12 px-6 flex flex-col items-center text-center">
@@ -28,23 +31,31 @@ export default function About() {
       <h3 className="text-2xl font-bold text-blue-400 mb-4">Recognizing Symptoms</h3>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mb-10">
-        <div className="bg-blue-100 rounded-lg p-4 shadow">
-          <p className="text-4xl mb-2">🗣️</p>
-          <p className="font-semibold text-gray-700">Hallucinations</p>
-        </div>
-        <div className="bg-blue-100 rounded-lg p-4 shadow">
-          <p className="text-4xl mb-2">🤯</p>
-          <p className="font-semibold text-gray-700">Delusions</p>
-        </div>
-        <div className="bg-blue-100 rounded-lg p-4 shadow">
-          <p className="text-4xl mb-2">💭</p>
-          <p className="font-semibold text-gray-700">Disorganized Speech</p>
-        </div>
-        <div className="bg-blue-100 rounded-lg p-4 shadow">
-          <p className="text-4xl mb-2">😶</p>
-          <p className="font-semibold text-gray-700">Flat Affect</p>
-        </div>
-      </div>
+  <div className="bg-blue-100 rounded-lg p-4 shadow flex flex-col items-center">
+    <p className="text-4xl mb-2">🗣️</p>
+    <p className="font-semibold text-gray-700">Hallucinations</p>
+  </div>
+
+  <div className="bg-blue-100 rounded-lg p-4 shadow flex flex-col items-center">
+    <p className="mb-2">
+      <img src={img2} alt="Delusions" className="h-10 w-10 object-contain" />
+    </p>
+    <p className="font-semibold text-gray-700">Delusions</p>
+  </div>
+
+  <div className="bg-blue-100 rounded-lg p-4 shadow flex flex-col items-center">
+    <p className="text-4xl mb-2">💭</p>
+    <p className="font-semibold text-gray-700">Disorganized Speech</p>
+  </div>
+
+  <div className="bg-blue-100 rounded-lg p-4 shadow flex flex-col items-center">
+    <p className="mb-2">
+      <img src={img1} alt="Flat Affect" className="h-10 w-10 object-contain" />
+    </p>
+    <p className="font-semibold text-gray-700">Flat Affect</p>
+  </div>
+</div>
+
 
      
       <div className="max-w-4xl mb-10">
